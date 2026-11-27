@@ -1,0 +1,2 @@
+import {readSample} from "../site-actions.js";
+export function registerActions(actions){actions.register({name:"read_sample",description:"Read a public historical signed synthetic evidence envelope. No side effects.",effect:"read",availability:"bridge",callerOrigins:["*"],inputSchema:{type:"object",properties:{scenario:{type:"string",enum:["baseline","mixed","reconciled","delay"]}},required:["scenario"],additionalProperties:false},execute:({scenario})=>readSample(scenario)})}

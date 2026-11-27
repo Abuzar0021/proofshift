@@ -1,0 +1,74 @@
+{
+  "brand": "proofshift",
+  "networks": [
+    {
+      "name": "proofshift",
+      "front_man": "evidence_coach",
+      "hocon": "./proofshift.network.json",
+      "description": "Recompute historical acceptance evidence from pinned demonstration keys.",
+      "sample_queries": [
+        "Compare the mixed sample using all three provider agents, then independently verify it.",
+        "Verify the baseline historical sample."
+      ]
+    }
+  ],
+  "llm_router": {
+    "base_url": "https://api.otari.ai/api/v1",
+    "mock": false,
+    "byok_router": "https://api.otari.ai/api/v1"
+  },
+  "allowed_peers": [
+    "http://127.0.0.1:8801",
+    "http://127.0.0.1:8802",
+    "http://127.0.0.1:8803"
+  ],
+  "peer_policy": {
+    "mode": "closed",
+    "deny_origins": [],
+    "note": "Read-only evidence peers; user consent applies to third-party origins."
+  },
+  "agent_mcp": {
+    "protocol": "nsdeploy-agent-mcp/v1",
+    "network": "proofshift",
+    "front_man": "evidence_coach",
+    "available": false,
+    "reason": "Static bundle, no public hosted MCP facade."
+  },
+  "theme": {
+    "primary": "#176451"
+  },
+  "linking": {
+    "protocol": "nsdeploy-link/v1",
+    "exports": [
+      {
+        "network": "proofshift",
+        "front_man": "evidence_coach",
+        "aliases": [
+          "proofshift",
+          "evidence_coach"
+        ],
+        "url": "proofshift"
+      }
+    ],
+    "imports": [],
+    "link_updates": {
+      "mode": "browser-local"
+    }
+  },
+  "deployment": {
+    "mode": "static",
+    "self_contained_runtime": true,
+    "browser_mock": false,
+    "direct_byok": true,
+    "direct_mcp_requires_cors": true,
+    "public_mcp_facade": false
+  },
+  "actions": {
+    "version": 1,
+    "module": "./site-actions.js",
+    "bridge": "./bridge/action-bridge.html",
+    "agentTools": [
+      "verify_sample"
+    ]
+  }
+}

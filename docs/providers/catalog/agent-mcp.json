@@ -1,0 +1,7 @@
+{
+  "protocol": "nsdeploy-agent-mcp/v1",
+  "network": "catalog_evidence",
+  "front_man": "evidence_reader",
+  "available": false,
+  "reason": "Static bundle, no public hosted MCP facade."
+}

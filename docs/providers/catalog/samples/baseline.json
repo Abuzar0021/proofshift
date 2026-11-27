@@ -1,0 +1,8 @@
+{
+  "checkedAt": "2026-11-27T11:40:33.260Z",
+  "nonce": "4da18647-4474-4a18-9918-7a39bff488b0",
+  "signedEnvelope": {
+    "payload": "eyJkYXRhIjp7InByaWNlcyI6eyJBIjoxMTAwMDAsIkIiOjE5MDAwMH0sInNrdXMiOlsiQSIsIkIiXX0sImV4cGlyZXMiOjE3OTU3Nzk2NTMyMjYsImlzc3VlZCI6MTc5NTc3OTYzMzIyNiwiaXNzdWVyIjoiZml4dHVyZS1jYXRhbG9nIiwibm9uY2UiOiI0ZGExODY0Ny00NDc0LTRhMTgtOTkxOC03YTM5YmZmNDg4YjAiLCJyZXZpc2lvbiI6MSwic2NoZW1hIjoxLCJzdWJqZWN0IjoiY2F0YWxvZyJ9",
+    "signature": "boFTG+V0KWBfiyrRTCcvrAHHNgAdEedfFDkwQPxzjYccqZjVzhLYftJjlsh3w7A5YcAU99yi1sNb1QlOHU2dCA=="
+  }
+}

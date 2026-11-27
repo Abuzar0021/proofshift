@@ -1,0 +1,65 @@
+{
+  "scenario": "baseline",
+  "checkedAt": "2026-11-27T11:40:33.260Z",
+  "nonce": "4da18647-4474-4a18-9918-7a39bff488b0",
+  "signedEnvelopes": {
+    "catalog": {
+      "payload": "eyJkYXRhIjp7InByaWNlcyI6eyJBIjoxMTAwMDAsIkIiOjE5MDAwMH0sInNrdXMiOlsiQSIsIkIiXX0sImV4cGlyZXMiOjE3OTU3Nzk2NTMyMjYsImlzc3VlZCI6MTc5NTc3OTYzMzIyNiwiaXNzdWVyIjoiZml4dHVyZS1jYXRhbG9nIiwibm9uY2UiOiI0ZGExODY0Ny00NDc0LTRhMTgtOTkxOC03YTM5YmZmNDg4YjAiLCJyZXZpc2lvbiI6MSwic2NoZW1hIjoxLCJzdWJqZWN0IjoiY2F0YWxvZyJ9",
+      "signature": "boFTG+V0KWBfiyrRTCcvrAHHNgAdEedfFDkwQPxzjYccqZjVzhLYftJjlsh3w7A5YcAU99yi1sNb1QlOHU2dCA=="
+    },
+    "stock": {
+      "payload": "eyJkYXRhIjp7ImF2YWlsYWJsZSI6WyJBIiwiQiJdLCJjYXRhbG9nRGlnZXN0IjoiZDA2YTQ3ODYyNzc0OWQ1NDljYzQyMWM4ZGQxMmFmZDA4NTlhMTM5YTU2YzE4MGRiZDdiNWQyZWU2MGJiODA0NCJ9LCJleHBpcmVzIjoxNzk1Nzc5NjUzMjI2LCJpc3N1ZWQiOjE3OTU3Nzk2MzMyMjYsImlzc3VlciI6ImZpeHR1cmUtc3RvY2siLCJub25jZSI6IjRkYTE4NjQ3LTQ0NzQtNGExOC05OTE4LTdhMzliZmY0ODhiMCIsInJldmlzaW9uIjoxLCJzY2hlbWEiOjEsInN1YmplY3QiOiJzdG9jayJ9",
+      "signature": "k8VJ2MSE5NStLXciZ2ibWG7+NPh2bzjR0J++ftQOv9dgV6ArzXeYHEDT3Ua3FHNn3amV2ztaNA/4kSVIJg/GDg=="
+    },
+    "shipping": {
+      "payload": "eyJkYXRhIjp7ImNhdGFsb2dEaWdlc3QiOiJkMDZhNDc4NjI3NzQ5ZDU0OWNjNDIxYzhkZDEyYWZkMDg1OWExMzlhNTZjMTgwZGJkN2I1ZDJlZTYwYmI4MDQ0IiwiY2VudHMiOjQ1MDAwLCJkYXlzIjoyLCJzdG9ja0RpZ2VzdCI6IjAwMDVhMjIwNjczMGQ0NjA4MmZkNGI1ZTAyZGFhMzdkYzU4MDY0OTFkYzRkMzVlMGNmMDc0MjgxODQ0ZTNlNmMifSwiZXhwaXJlcyI6MTc5NTc3OTY1MzIyNiwiaXNzdWVkIjoxNzk1Nzc5NjMzMjI2LCJpc3N1ZXIiOiJmaXh0dXJlLXNoaXBwaW5nIiwibm9uY2UiOiI0ZGExODY0Ny00NDc0LTRhMTgtOTkxOC03YTM5YmZmNDg4YjAiLCJyZXZpc2lvbiI6MSwic2NoZW1hIjoxLCJzdWJqZWN0Ijoic2hpcHBpbmcifQ==",
+      "signature": "lDqlBtudcdEqyRJ9aqM5FXvPEBPgqlqA0OZBdwbkErdyXE3pe00EUHmVvoZiAFvHQy3wOmo26yIu3+MuSs18Aw=="
+    }
+  },
+  "result": {
+    "verdict": "PASS",
+    "nodes": {
+      "catalog": {
+        "key": "0cd6eb3d1fbc83bf4a807cd8ac54d6507bb924f18f47df2bccb86f70e1052a77",
+        "state": "PASS",
+        "reason": "Requirement satisfied"
+      },
+      "inventory": {
+        "key": "2f1fba1d78072d3cfdaf78313bce6104382d58f717d79cc5ac030961a23c9e4e",
+        "state": "PASS",
+        "reason": "Requirement satisfied"
+      },
+      "shipping": {
+        "key": "9c919443414a66e87af4b19b60a82b9223c4b98de1404bce746639c4ba52899e",
+        "state": "PASS",
+        "reason": "Requirement satisfied"
+      },
+      "budget": {
+        "key": "0587ce07eeeab99d8c051113f7b9df51abeea5921d48b16499d0201b0debc6aa",
+        "state": "PASS",
+        "reason": "Requirement satisfied"
+      },
+      "coherence": {
+        "key": "71d1179735549f6a31b8b68637b354ff33c199acc4246ddfc92ba21d87238db3",
+        "state": "PASS",
+        "reason": "Requirement satisfied"
+      },
+      "release": {
+        "key": "ef4dab88268605278e92e7000e6ea14054faf5a1a2348bc0bba70cdcff455e0a",
+        "state": "PASS",
+        "reason": "Requirement satisfied"
+      }
+    },
+    "rerun": [
+      "catalog",
+      "inventory",
+      "shipping",
+      "budget",
+      "coherence",
+      "release"
+    ],
+    "reused": [],
+    "policyDigest": "04cd4d65221e5a5d1fe0b35090862f798a46d3d11029e9b3ca09f24ddb3e3f2e",
+    "expires": 1795779653226
+  }
+}

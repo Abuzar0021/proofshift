@@ -1,0 +1,18 @@
+{
+  "protocol": "nsdeploy-link/v1",
+  "exports": [
+    {
+      "network": "stock_evidence",
+      "front_man": "evidence_reader",
+      "aliases": [
+        "stock_evidence",
+        "evidence_reader"
+      ],
+      "url": "stock_evidence"
+    }
+  ],
+  "imports": [],
+  "link_updates": {
+    "mode": "browser-local"
+  }
+}

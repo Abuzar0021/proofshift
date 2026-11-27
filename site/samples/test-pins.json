@@ -1,0 +1,37 @@
+{
+  "providers": [
+    {
+      "subject": "catalog",
+      "issuer": "fixture-catalog",
+      "origin": "http://127.0.0.1:18881",
+      "key": {
+        "crv": "Ed25519",
+        "x": "QEQDzX0sclZm23JQWyGF396ankYDW0GsVJSel4h8rww",
+        "kty": "OKP"
+      },
+      "pid": 10516
+    },
+    {
+      "subject": "stock",
+      "issuer": "fixture-stock",
+      "origin": "http://127.0.0.1:18882",
+      "key": {
+        "crv": "Ed25519",
+        "x": "evKCdEn_WCN1WDPAZIy8svmHnuN1I_zu4934jJqyrXw",
+        "kty": "OKP"
+      },
+      "pid": 9620
+    },
+    {
+      "subject": "shipping",
+      "issuer": "fixture-shipping",
+      "origin": "http://127.0.0.1:18883",
+      "key": {
+        "crv": "Ed25519",
+        "x": "GVBE981SWJNhIIrINLy0huKatd_tTJo8XzHDgGxtdXQ",
+        "kty": "OKP"
+      },
+      "pid": 5688
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "brand": "stock_evidence",
+  "networks": [
+    {
+      "name": "stock_evidence",
+      "front_man": "evidence_reader",
+      "hocon": "./stock_evidence.network.json",
+      "description": "Read-only historical signed stock evidence from the ProofShift synthetic lab.",
+      "sample_queries": [
+        "Inspect the mixed evidence sample."
+      ]
+    }
+  ],
+  "llm_router": {
+    "base_url": "https://api.otari.ai/api/v1",
+    "mock": false,
+    "byok_router": "https://api.otari.ai/api/v1"
+  },
+  "allowed_peers": [],
+  "peer_policy": {
+    "mode": "closed",
+    "deny_origins": [],
+    "note": "Read-only tools; no outgoing peer calls."
+  },
+  "agent_mcp": {
+    "protocol": "nsdeploy-agent-mcp/v1",
+    "network": "stock_evidence",
+    "front_man": "evidence_reader",
+    "available": false,
+    "reason": "Static bundle, no public hosted MCP facade."
+  },
+  "theme": {
+    "primary": "#176451"
+  },
+  "linking": {
+    "protocol": "nsdeploy-link/v1",
+    "exports": [
+      {
+        "network": "stock_evidence",
+        "front_man": "evidence_reader",
+        "aliases": [
+          "stock_evidence",
+          "evidence_reader"
+        ],
+        "url": "stock_evidence"
+      }
+    ],
+    "imports": [],
+    "link_updates": {
+      "mode": "browser-local"
+    }
+  },
+  "deployment": {
+    "mode": "static",
+    "self_contained_runtime": true,
+    "browser_mock": false,
+    "direct_byok": true,
+    "direct_mcp_requires_cors": true,
+    "public_mcp_facade": false
+  },
+  "actions": {
+    "version": 1,
+    "module": "./site-actions.js",
+    "bridge": "./bridge/action-bridge.html",
+    "agentTools": [
+      "read_sample"
+    ]
+  }
+}

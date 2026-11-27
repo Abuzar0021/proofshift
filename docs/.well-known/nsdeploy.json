@@ -1,0 +1,18 @@
+{
+  "protocol": "nsdeploy-link/v1",
+  "exports": [
+    {
+      "network": "proofshift",
+      "front_man": "evidence_coach",
+      "aliases": [
+        "proofshift",
+        "evidence_coach"
+      ],
+      "url": "proofshift"
+    }
+  ],
+  "imports": [],
+  "link_updates": {
+    "mode": "browser-local"
+  }
+}

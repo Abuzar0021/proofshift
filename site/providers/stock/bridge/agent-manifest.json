@@ -1,0 +1,11 @@
+{
+  "networks": [
+    {
+      "name": "stock_evidence"
+    }
+  ],
+  "actions": {
+    "version": 1,
+    "module": "./bridge-actions.js"
+  }
+}

@@ -1,0 +1,2 @@
+import {inspect} from "../site-actions.js";
+export function registerActions(actions){actions.register({name:"verify_sample",description:"Recompute historical test evidence and return the fixed-policy verdict. This is not current evidence or a release authorization.",effect:"read",availability:"bridge",callerOrigins:["*"],inputSchema:{type:"object",properties:{scenario:{type:"string",enum:["baseline","mixed","reconciled","delay"]}},required:["scenario"],additionalProperties:false},execute:({scenario})=>inspect(scenario)});}
